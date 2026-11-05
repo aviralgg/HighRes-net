@@ -1,31 +1,41 @@
-tornado==5.1.1
-numpy
+# Core dependencies
+numpy==1.24.3
+scipy==1.11.4
+scikit-image==0.22.0
+scikit-learn==1.3.2
+
+# Deep learning
+torch==2.4.1
+torchvision==0.19.1
+tensorflow==2.13.1
+
+# Image processing
+Pillow==10.4.0
+matplotlib==3.7.5
+
+# Data handling
+pandas==2.0.3
+fiona
+tqdm==4.66.5
+
+# Utilities
+tornado==6.3.3
 retrying
 requests
-scikit-image
-scipy
-torch
-torchvision
-tensorflow
-tensorboardX
-matplotlib
-ipython
-jupyter
-pandas
-seaborn
-
-fiona
-tqdm
-
-scikit-learn==0.20.3
-sklearn==0.0
-pytest
 six
-Pillow
-
+tensorboardX
 ipdb
+pytest
 
+# Visualization
+seaborn==0.13.2
 plotly
+
+# Jupyter
+ipython==8.18.1
+jupyter
 jupyter_contrib_nbextensions
 jupyter_nbextensions_configurator
+
+# Profiling
 line_profiler
