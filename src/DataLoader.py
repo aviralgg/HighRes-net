@@ -117,7 +117,7 @@ def read_imageset(imset_dir, create_patches=False, patch_size=64, seed=None, top
 
     lr_images = np.array([io.imread(join(imset_dir, f'LR{i}.png')) for i in idx_names], dtype=np.uint16)
 
-    hr_map = np.array(io.imread(join(imset_dir, 'SM.png')), dtype=np.bool)
+    hr_map = np.array(io.imread(join(imset_dir, 'SM.png')), dtype=bool)
     if exists(join(imset_dir, 'HR.png')):
         hr = np.array(io.imread(join(imset_dir, 'HR.png')), dtype=np.uint16)
     else:
